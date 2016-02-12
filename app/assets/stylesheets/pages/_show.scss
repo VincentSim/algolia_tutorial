@@ -1,0 +1,57 @@
+#team_members_show{
+  .spacer{
+    height: 10vw;
+  }
+  .card.maxi{
+    display: block;
+    margin: auto;
+    width: 500px;
+
+    .comic{
+      border-bottom: 1px solid white;
+      padding-bottom: 20px;
+    }
+    .funny-quote{
+      /*float: right;
+      width: 34%;*/
+      color: aliceblue;
+      text-align: center;
+      font-weight: 200;
+      font-size: 1.3em;
+      font-style: italic;
+      position: absolute;
+      width: 15%;
+      top: 7vw;
+      min-width: 230px;
+      left: 53%;
+      height: 190px;
+      display: flex;
+      p{
+        margin:auto;
+      }
+    }
+    .photo{
+      float:left;
+      margin-top: 40px;
+    }
+    svg{
+      position: absolute;
+      width: 22%;
+      top: 6vw;
+      min-width: 300px;
+      left: 50%;
+    }
+    .infos{
+      margin-top: 10px;
+      color: white;
+      text-align: center;
+      .name{
+        font-size: 30px;
+        font-weight: 300;
+      }
+      .function{
+        font-style: italic;
+      }
+    }
+  }
+}

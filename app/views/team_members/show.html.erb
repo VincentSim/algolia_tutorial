@@ -1,0 +1,25 @@
+<div class="spacer">
+</div>
+<div class="card maxi">
+  <div class="row comic">
+    <div class="photo">
+      <img src="<%= @team_member.photo %>" class="img-circle" >
+    </div>
+    <div class="funny-quote">
+      <p>
+      "<%= @team_member.funny_quote %>"
+      </p>
+    </div>
+    <%= render 'shared/bubble' %>
+  </div>
+  <div class="row">
+    <div class="infos">
+      <div class="name">
+        <%= @team_member.name %>
+      </div>
+      <div class="function">
+        <%= @team_member.function %>
+      </div>
+    </div>
+  </div>
+</div>

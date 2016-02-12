@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AlgoliaBasis</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+  <link href="https://www.algolia.com/static_assets/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <!-- Add these line for detecting device width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+</head>
+<body id="<%= "#{params[:controller].gsub(/\//, '_')}_#{params[:action]}" %>">
+
+  <div class="container">
+    <%= yield %>
+  </div>
+
+  <footer class="footer">
+    <p>
+      Designed and built with <i class="fa fa-heart"></i> for <a href="https://www.algolia.com/?utm_medium=social-owned&amp;utm_source=instantsearch.js%20website&amp;utm_campaign=homepage"><img src="https:community.algolia.com/instantsearch.js/img/logo-algolia-dark.png" alt="Algolia" height="20"></a>
+    </p>
+  </footer>
+</body>
+</html>

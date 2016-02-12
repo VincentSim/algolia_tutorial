@@ -1,0 +1,23 @@
+/* -------------------------------------
+ * CSS code specific to home page
+ * (margin/padding adjustments)
+ * ------------------------------------- */
+body{
+  background: -webkit-linear-gradient(300deg, rgba(24, 40, 72, 0.4) 0%, #182848 90%) #1D96C7;
+  background: -o-linear-gradient(300deg, rgba(24, 40, 72, 0.4) 0%, #182848 90%) #1D96C7;
+  background: linear-gradient(30deg, rgba(24, 40, 72, 0.4) 0%, #182848 90%) #1D96C7;
+
+  .container{
+    min-height: 650px;
+  }
+}
+//////////// index
+#team_members_index{
+  h1{
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    margin: 1.8em 0 .8em;
+    font: 300 3.1em/100% Raleway;
+    color: white;
+  }
+}
