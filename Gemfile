@@ -34,6 +34,11 @@ gem "figaro"
 
 # Algolia
 gem "algoliasearch-rails"
+gem "hogan_assets"
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-algoliasearch'
+end
 
 # Use Unicorn as the app server
 # gem 'unicorn'

@@ -3,3 +3,28 @@
 <div class="catchline">
   <h1>Find a member of <img src="https:community.algolia.com/instantsearch.js/img/logo-algolia-dark.png" alt="Algolia" height="50">'s team</h1>
 </div>
+
+ <div class="demo">
+  <input class="typeahead form-control" type="text" placeholder="Start typing"
+         id="typeahead-algolia"  spellcheck="false"/>
+</div>
+
+<script>
+  $(document).ready(function() {
+    var client = algoliasearch("QEM34PCT1G", "906eb04f5af973223704e0724df9203b");
+    var index = client.initIndex('TeamMember');
+
+   // use Hogan as templating engine
+    var template = Hogan.compile('<a href=<%= team_members_path %>/{{ objectID }}>'+
+      '<div class="results"><img src={{{ photo }}} alt=""> {{{_highlightResult.name.value}}} </div></a>');
+    $('#typeahead-algolia').typeahead({hint: false}, {
+      source: client.initIndex('TeamMember').ttAdapter(),
+      displayKey: 'name', // attribute displayed once selected
+      templates: {
+        suggestion: function(hit) {
+          return template.render(hit); // moustache template rendered by Hogan
+        }
+      }
+    });
+  });
+</script>

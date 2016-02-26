@@ -222,6 +222,18 @@ TEAM = [
     funny_quote: "How do I learn piano? Very slowly.",
     photo: "https://algolia.com/assets/about-anthony.jpg",
     position: 36
+  },{
+    name: "Leo Ercolanelli",
+    function: "Software Engineer Intern",
+    funny_quote: "I usually eat at the speed of light",
+    photo: "https://algolia.com/static_assets/images/about-leo.jpg",
+    position: 37
+  },{
+    name: "Lucas Bonomi",
+    function: "Software Engineer",
+    funny_quote: "I wanted to be an inventor, and then I discovered the web.",
+    photo: "https://algolia.com/static_assets/images/about-lucas.jpg",
+    position: 37
   }
 ]
 
